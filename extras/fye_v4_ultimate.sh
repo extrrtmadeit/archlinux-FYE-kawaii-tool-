@@ -66,6 +66,21 @@ anime_title() {
   printf "\n"
 }
 
+loading_screen() {
+  clear
+  printf "\e[38;5;45mBooting FYE Ultimate...\e[0m\n\n"
+  local width=36
+  for i in $(seq 1 $width); do
+    local done=$(printf '%*s' "$i" '' | tr ' ' '█')
+    local left=$(printf '%*s' "$((width-i))" '' | tr ' ' '░')
+    printf "\r\e[38;5;99m[%s%s]\e[0m \e[38;5;219m%3d%%\e[0m" "$done" "$left" "$(( i*100/width ))"
+    sleep 0.03
+  done
+  printf "\n\e[38;5;45mLoaded. Welcome, senpai~\e[0m\n"
+  play_sfx kawaii
+  sleep 0.35
+}
+
 pause(){ read -rp "Press Enter to continue..." _; }
 run(){ eval "$1"; }
 
@@ -124,6 +139,8 @@ telegram_send() {
   curl -s "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
     -d chat_id="$TELEGRAM_CHAT_ID" -d text="$msg" >/dev/null && echo "Sent."
 }
+
+loading_screen
 
 while true; do
   header
