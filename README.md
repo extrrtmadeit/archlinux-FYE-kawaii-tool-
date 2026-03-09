@@ -13,12 +13,17 @@ A flashy terminal toolkit for Arch Linux (great in WSL too):
 ## Features
 
 ### 🎨 Style + Fun
-- `fye` interactive menu
+- `fye` interactive menu (30+ options in Ultimate)
 - Matrix rain
 - Nyan cat
 - Kawaii mode (ponysay/cowsay + colors)
 - EXTORT banner
 - random quote vibe (`wisdom`)
+- custom terminal pipes animation
+
+### 🔊 SFX
+- local generated sound effects (select / kawaii / error)
+- optional online sound-effect fetch
 
 ### 🛠 Useful Utilities
 - system monitor (`btop`)
@@ -27,12 +32,18 @@ A flashy terminal toolkit for Arch Linux (great in WSL too):
 - disk usage (`dust`, `duf`)
 - terminal recorder (`asciinema`)
 - network route health (`mtr`)
+- json formatter demo (`jq`)
 
 ### 🔐 Legal Security Helpers
 - `hackmenu` launcher
 - localhost scan shortcut
 - LAN ping sweep shortcut
 - SQLMap help shortcut
+
+### 🌐 Integrations
+- Discord webhook config + send message
+- Telegram bot token/chat config + send message
+- quick open Discord/Telegram web
 
 ---
 
