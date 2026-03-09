@@ -10,6 +10,10 @@ A flashy terminal toolkit for Arch Linux (great in WSL too):
 
 ---
 
+## Preview
+
+- See live-style preview: [PREVIEW.md](./PREVIEW.md)
+
 ## Features
 
 ### 🎨 Style + Fun
