@@ -51,14 +51,17 @@ For WSL users: install Arch distro first, then run setup.
 ```bash
 # clone or copy this repo first
 cd FYE-kawaii-tool
-chmod +x setup.sh
-./setup.sh
+chmod +x setup-v2.sh
+./setup-v2.sh
 ```
 
 Then restart terminal or run:
 ```bash
 source ~/.zshrc
+fye
 ```
+
+> Legacy installer: `setup.sh` (kept for compatibility)
 
 ---
 
